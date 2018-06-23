@@ -1,7 +1,3 @@
-// *********************************************************************************
-// api-routes.js - this file offers a set of routes for displaying and saving data to the db
-// *********************************************************************************
-
 // Dependencies
 // =============================================================
 
@@ -12,13 +8,13 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the items
-  app.get("/api/items", function(req, res) {
+  app.get("/api/products", function(req, res) {
     var query = {};
     if (req.query.product_id) {
       query.ItemId = req.query.product_id;
     }
     // Including the Review Table
-    db.Post.findAll({
+    db.Product.findAll({
       where: query,
       include: [db.Review]
     }).then(function(dbProduct) {
@@ -27,10 +23,10 @@ module.exports = function(app) {
   });
 
   // Get route for retrieving a single item
-  app.get("/api/items/:id", function(req, res) {
+  app.get("/api/products/:id", function(req, res) {
     // Adding an "include" property to our options in our findOne query
     // This will allow us to pull the reviews for that item
-    db.Post.findOne({
+    db.Product.findOne({
       where: {
         id: req.params.id
       },
@@ -41,14 +37,14 @@ module.exports = function(app) {
   });
 
   // POST route for saving a new item
-  app.post("/api/items", function(req, res) {
+  app.post("/api/products", function(req, res) {
     db.Post.create(req.body).then(function(dbProduct) {
       res.json(dbProduct);
     });
   });
 
   // DELETE route for deleting items
-  app.delete("/api/items/:id", function(req, res) {
+  app.delete("/api/products/:id", function(req, res) {
     db.Item.destroy({
       where: {
         id: req.params.id
