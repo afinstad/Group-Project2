@@ -1,0 +1,44 @@
+{
+  "name": "Group-Project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "4.1.2",
+    "npm": "3.5.2"
+  },
+  "scripts": {
+    "postinstall": "bower install && gulp config && gulp js",
+    "start": "npm run production",
+    "production": "node app-server.js",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afinstad/Group-Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afinstad/Group-Project2/issues"
+  },
+  "homepage": "https://github.com/afinstad/Group-Project2#readme",
+  "dependencies": {
+    "passport-local": "^1.0.0",
+    "bower": "^1.7.7",
+    "express": "^4.13.3",
+    "gulp": "^3.9.1",
+    "buffer-to-vinyl": "^1.1.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-config": "^1.4.0",
+    "gulp-env": "^0.4.0",
+    "gulp-webserver": "^0.9.1",
+    "http-server": "^0.9.0",
+    "wiredep": "^3.0.0",
+    "gulp-npm-script-sync": "^1.1.0"
+  }
+}
