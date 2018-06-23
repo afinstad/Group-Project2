@@ -18,12 +18,12 @@ module.exports = function (sequelize, DataTypes) {
       len: [1]
     },
     cost: {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       allowNull: false,
       len: [1]
     },
     quantity: {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       allowNull: false,
       len: [1]
     },
@@ -38,19 +38,17 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
 
-  Product.associate = function (models) {
+  // Product.associate = function (models) {
 
-    Product.hasMany(models.Review, {
-      onDelete: "cascade"
-    });
-  };
+  //   Product.hasMany(models.Size, {
+  //     onDelete: "cascade"
+  //   });
 
-  Product.associate = function (models) {
+  //   Product.hasMany(models.Review, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
-    Product.hasMany(models.Size, {
-      onDelete: "cascade"
-    });
-  };
 
   return Product;
 };
