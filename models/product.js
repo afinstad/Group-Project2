@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  var Product = sequelize.define("Item", {
+  var Product = sequelize.define("Product", {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -38,16 +38,16 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
 
-  // Product.associate = function (models) {
+  Product.associate = function (models) {
 
-  //   Product.hasMany(models.Size, {
-  //     onDelete: "cascade"
-  //   });
+    Product.hasMany(models.Size, {
+      onDelete: "cascade"
+    });
 
-  //   Product.hasMany(models.Review, {
-  //     onDelete: "cascade"
-  //   });
-  // };
+    Product.hasMany(models.Review, {
+      onDelete: "cascade"
+    });
+  };
 
 
   return Product;
