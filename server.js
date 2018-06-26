@@ -30,7 +30,7 @@ app.use(express.static("public"));
 // require("./routes/html-routes.js")(app);
 require("./routes/product-api-route.js")(app);
 require("./routes/review-api-route.js")(app);
-require("./routes/size-api-route.js")(app);
+
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

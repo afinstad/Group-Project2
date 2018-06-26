@@ -55,15 +55,15 @@ module.exports = function(app) {
   });
 
   // PUT route for updating item inventory
-//   app.put("/api/posts", function(req, res) {
-//     db.Post.update(
-//       req.body,
-//       {
-//         where: {
-//           id: req.body.id
-//         }
-//       }).then(function(dbPost) {
-//       res.json(dbPost);
-//     });
-//   });
+  app.put("/api/products", function(req, res) {
+    db.Product.update(
+      req.body,
+      {
+        where: {
+          id: req.body.id
+        }
+      }).then(function(dbProduct) {
+      res.json(dbProduct);
+    });
+  });
 };
