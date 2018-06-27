@@ -14,60 +14,6 @@
     padding: 10px 0;
 }
 
-/************* HAMBURGER MENU ************/
-
-#hamburger-menu-icon {
-    background-color: #F7C9B8;
-}
-
-#hamburger-menu-icon i {
-    margin: 20px;
-    padding: 10px;
-    font-size: 200%;
-    color: #707070;
-}
-
-#hamburger-menu i {
-    margin: 20px;
-    padding: 10px;
-    font-size: 200%;
-    color: #707070;
-}
-
-.hamburger-menu-class {
-    z-index: 1;
-    top: 0;
-    left: -33%;
-    position: fixed;
-    background-color: #F7C9B8;
-    height: 100%;
-    width: 33%;
-    transition: .5s;
-}
-
-.hamburger-menu-class li {
-    color: #707070;
-    font-size: 125%;
-    margin: 40px;
-}
-
-.hamburger-menu-class .indented-list {
-    font-size: 100%;
-}
-
-.hamburger-menu-class .col {
-    margin: 40px;
-    padding: 10px;
-}
-
-.hamburger-menu-class-active {
-    left: 0;
-}
-
-
-
-
-
 #site-logo {
     border-style: solid;
     border-width: 0 1px 0 1px;
@@ -78,17 +24,6 @@
     margin: 0;
     font-size: 400%;
     font-family: 'Open Sans', sans-serif;
-    color: #707070;
-}
-
-#shopping-cart {
-    background-color: #F7C9B8;
-}
-
-#shopping-cart-icon {
-    margin: 25px;
-    padding: 10px;
-    font-size: 100%;
     color: #707070;
 }
 
