@@ -12,7 +12,9 @@ module.exports = {
         cost: 15.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/ombre.maroon.teal.navy.png'
+        photo: './public/images/ombre.maroon.teal.navy.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exChiffon2',
@@ -21,7 +23,9 @@ module.exports = {
         cost: 16.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/ombre.mustard.png'
+        photo: './public/images/ombre.mustard.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exChiffon3',
@@ -30,7 +34,9 @@ module.exports = {
         cost: 17.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/ombre.navypng'
+        photo: './public/images/ombre.navypng',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exChiffon4',
@@ -39,7 +45,9 @@ module.exports = {
         cost: 18.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/ombre.teal.png'
+        photo: './public/images/ombre.teal.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose1',
@@ -48,7 +56,9 @@ module.exports = {
         cost: 15.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/black.viscose.png'
+        photo: './public/images/black.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose2',
@@ -57,7 +67,9 @@ module.exports = {
         cost: 16.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/iman.viscose.png'
+        photo: './public/images/iman.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose3',
@@ -66,7 +78,9 @@ module.exports = {
         cost: 17.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/olive.viscose.png'
+        photo: './public/images/olive.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose4',
@@ -75,7 +89,9 @@ module.exports = {
         cost: 18.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/more.viscose.png'
+        photo: './public/images/more.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose5',
@@ -84,7 +100,9 @@ module.exports = {
         cost: 19.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/more1.viscose.png'
+        photo: './public/images/more1.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose6',
@@ -93,7 +111,9 @@ module.exports = {
         cost: 20.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/more2.viscose.png'
+        photo: './public/images/more2.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exViscose7',
@@ -102,7 +122,9 @@ module.exports = {
         cost: 21.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/mustard.viscose.png'
+        photo: './public/images/mustard.viscose.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exJersey1',
@@ -111,7 +133,9 @@ module.exports = {
         cost: 15.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/aqua.jersey.png'
+        photo: './public/images/aqua.jersey.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exJersey2',
@@ -120,7 +144,9 @@ module.exports = {
         cost: 16.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/grey.jersey.png'
+        photo: './public/images/grey.jersey.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exJersey3',
@@ -129,7 +155,9 @@ module.exports = {
         cost: 17.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/jersey.png'
+        photo: './public/images/jersey.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exJersey4',
@@ -138,7 +166,9 @@ module.exports = {
         cost: 18.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/pink.jersey.png'
+        photo: './public/images/pink.jersey.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exPrinted1',
@@ -147,7 +177,9 @@ module.exports = {
         cost: 15.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/embroidered.black.png'
+        photo: './public/images/embroidered.black.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exPrinted2',
@@ -156,7 +188,9 @@ module.exports = {
         cost: 16.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/embroidered.cream.png'
+        photo: './public/images/embroidered.cream.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exPrinted3',
@@ -165,7 +199,9 @@ module.exports = {
         cost: 17.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/embroidered.green.png'
+        photo: './public/images/embroidered.green.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         name: 'exPrinted4',
@@ -174,7 +210,9 @@ module.exports = {
         cost: 18.99,
         quantity: 8000,
         purchase: false,
-        photo: './public/images/embroidered.png'
+        photo: './public/images/embroidered.png',
+        createdAt: new Date(),
+        updatedAt: new Date(),
       }
     ])
   },
