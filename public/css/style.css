@@ -14,26 +14,6 @@
     padding: 10px 0;
 }
 
-/* HAMBURGER MENU */
-
-#hamburger-menu {
-    background-color: #F7C9B8;
-}
-
-#hamburger-menu-icon {
-    margin: 20px;
-    padding: 10px;
-    font-size: 200%;
-    color: #707070;
-}
-
-.hamburger-menu-open {
-    left: 0;
-    top: 0;
-    height: 100%;
-    position: fixed;
-}
-
 #site-logo {
     border-style: solid;
     border-width: 0 1px 0 1px;
@@ -44,17 +24,6 @@
     margin: 0;
     font-size: 400%;
     font-family: 'Open Sans', sans-serif;
-    color: #707070;
-}
-
-#shopping-cart {
-    background-color: #F7C9B8;
-}
-
-#shopping-cart-icon {
-    margin: 25px;
-    padding: 10px;
-    font-size: 100%;
     color: #707070;
 }
 
@@ -109,3 +78,23 @@
     /* position: fixed; */
 }
 
+
+
+
+
+/************** Product Page Styles *************/
+
+.product {
+    width: 30%;
+    margin: 40px 13px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.product p {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px;
+    margin: 20px;
+    float: left;
+}

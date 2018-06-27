@@ -1,0 +1,120 @@
+/************* HAMBURGER MENU ************/
+
+#hamburger-menu-icon {
+    background-color: #F7C9B8;
+}
+
+#hamburger-menu-icon i {
+    margin: 20px;
+    padding: 10px;
+    font-size: 200%;
+    color: #707070;
+}
+
+#hamburger-menu i {
+    margin: 20px;
+    padding: 10px;
+    font-size: 200%;
+    color: #707070;
+}
+
+.hamburger-menu-class {
+    z-index: 1;
+    top: 0;
+    left: -33%;
+    position: fixed;
+    background-color: #F7C9B8;
+    height: 100%;
+    width: 33%;
+    transition: .5s;
+}
+
+.hamburger-menu-class li {
+    color: #707070;
+    font-size: 125%;
+    margin: 40px;
+}
+
+.hamburger-menu-class .indented-list {
+    font-size: 100%;
+}
+
+.hamburger-menu-class .col {
+    margin: 40px;
+    padding: 10px;
+}
+
+.hamburger-menu-class-active {
+    left: 0;
+}
+
+
+
+/************* SHOPPING CART MENU ************/
+
+#shopping-cart-icon {
+    background-color: #F7C9B8;
+}
+
+#shopping-cart-icon .fa-shopping-cart {
+    margin: 25px;
+    padding: 10px;
+    font-size: 100%;
+    color: #707070;
+}
+
+#shopping-cart i {
+    margin: 20px;
+    padding: 10px;
+    font-size: 200%;
+    color: #707070;
+}
+
+.shopping-cart-class {
+    z-index: 1;
+    top: 0;
+    right: -33%;
+    position: fixed;
+    background-color: #F7C9B8;
+    height: 100%;
+    width: 33%;
+    transition: .5s;
+}
+
+.shopping-cart-class .col {
+    margin: 40px;
+    padding: 10px;
+}
+
+.shopping-cart-class-active {
+    right: 0;
+}
+
+
+/********** Shopping Cart Products **********/
+
+.shopping-cart-product {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+    height: 100px;
+    margin: 40px;
+}
+
+.shopping-cart-product .col-lg-4 {
+    padding: 0;
+}
+
+.shopping-cart-product img {
+    height: 98px;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: #707070;
+}
+
+.shopping-cart-product p {
+    font-size: 50%;
+    margin: 15px;
+}
