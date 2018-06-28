@@ -1,15 +1,35 @@
+
+require("dotenv").config()
+var PUB_KEY = process.env.PUB_KEY
+var SECRET_KEY = process.env.SECRET_KEY
+console.log (SECRET_KEY)
+// Set your secret key: remember to change this to your live secret key in production
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+var stripe = require("stripe")(SECRET_KEY);
+
+const charge = stripe.charges.create(
+    {
+        amount: 999,
+        currency: 'usd',
+        source: 'tok_visa',
+        receipt_email: 'jenny.rosen@example.com',
+    }
+).then(res => {
+    console.log (res)
+})
+
 // *****************************************************************************
 // Server.js - This file is the initial starting point for the Node/Express server.
 //
 // ******************************************************************************
 // *** Dependencies
-// =============================================================
+
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require('path');
 
 // Sets up the Express App
-// =============================================================
+
 var app = express();
 var PORT = process.env.PORT || 8080;
 
@@ -36,10 +56,11 @@ var session = require('express-session');
 var passport = require('passport');
 
 // Routes
-// =============================================================
+
 // require("./routes/html-routes.js")(app);
 require("./routes/product-api-route.js")(app);
 require("./routes/review-api-route.js")(app);
+<<<<<<< HEAD
 require("./routes/size-api-route.js")(app);
 require('./db/connection')(app);
 require('./routes/login')(app);
@@ -107,11 +128,18 @@ function ensureAuthenticated(req, res, next){
 app.get('/*', function(req, res){
   res.sendFile(path.join(__dirname, 'public/views/index.html'));
 });
+=======
+
+>>>>>>> 538a834009fc395574b0e1c5f45d582a3c2a58c6
 
 // Syncing our sequelize models and then starting our Express app
-// =============================================================
+
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 538a834009fc395574b0e1c5f45d582a3c2a58c6
