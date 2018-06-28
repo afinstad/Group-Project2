@@ -25,6 +25,28 @@
   },
   "homepage": "https://github.com/afinstad/Group-Project2#readme",
   "dependencies": {
+
+
+    "bower": "^1.7.7",
+    "buffer-to-vinyl": "^1.1.0",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-env": "^0.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-config": "^1.4.0",
+    "gulp-npm-script-sync": "^1.1.0",
+    "gulp-webserver": "^0.9.1",
+    "http-server": "^0.9.0",
+    "mysql2": "^1.5.3",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.38.0",
+    "wiredep": "^3.0.0"
+
+    "passport-local": "^1.0.0",
+
     "bower": "^1.7.7",
     "buffer-to-vinyl": "^1.1.0",
     "dot-env": "0.0.1",
@@ -40,8 +62,12 @@
     "gulp-npm-script-sync": "^1.1.0",
     "gulp-webserver": "^0.9.1",
     "http-server": "^0.9.0",
+
     "passport-local": "^1.0.0",
     "stripe": "^6.1.1",
-    "wiredep": "^3.0.0"
+
+    "wiredep": "^3.0.0",
+    "gulp-npm-script-sync": "^1.1.0"
+
   }
 }

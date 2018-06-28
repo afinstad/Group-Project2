@@ -26,7 +26,8 @@ Sequilize - An ORM that supports MySQL
 #Future Add-ons 
 
 #Team
-odan Roble
+
+Hodan Roble
 Ileys Osman 
 Jonathon Engelien
 Amanda Finstad
