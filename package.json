@@ -1,5 +1,5 @@
 {
-  "name": "Group-Project2",
+  "name": "group-project2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -43,6 +43,9 @@
     "passport-local": "^1.0.0",
     "sequelize": "^4.38.0",
     "sequelize-cli": "^4.0.0",
+    "dot-env": "0.0.1",
+    "dotenv": "^6.0.0",
+    "stripe": "^6.1.1",
     "wiredep": "^3.0.0"
   }
 }
