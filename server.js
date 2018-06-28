@@ -60,7 +60,6 @@ var passport = require('passport');
 // require("./routes/html-routes.js")(app);
 require("./routes/product-api-route.js")(app);
 require("./routes/review-api-route.js")(app);
-<<<<<<< HEAD
 require("./routes/size-api-route.js")(app);
 require('./db/connection')(app);
 require('./routes/login')(app);
@@ -128,18 +127,18 @@ function ensureAuthenticated(req, res, next){
 app.get('/*', function(req, res){
   res.sendFile(path.join(__dirname, 'public/views/index.html'));
 });
-=======
 
->>>>>>> 538a834009fc395574b0e1c5f45d582a3c2a58c6
 
 // Syncing our sequelize models and then starting our Express app
+<<<<<<< HEAD
+// =============================================================
+db.sequelize.sync({ force: false }).then(function() {
+=======
 
 db.sequelize.sync({ force: true }).then(function() {
+>>>>>>> 21ec46e96b345055a1858571161fbf01f3f85a54
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
 });
-<<<<<<< HEAD
-=======
 
->>>>>>> 538a834009fc395574b0e1c5f45d582a3c2a58c6

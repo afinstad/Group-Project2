@@ -1,4 +1,4 @@
-// Type definitions for Node.js 10.3.x
+// Type definitions for Node.js 10.5.x
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <http://typescriptlang.org>
 //                 DefinitelyTyped <https://github.com/DefinitelyTyped/DefinitelyTyped>
@@ -477,6 +477,7 @@ declare namespace NodeJS {
         showProxy?: boolean;
         maxArrayLength?: number | null;
         breakLength?: number;
+        compact?: boolean;
     }
 
     export interface ConsoleConstructor {
@@ -5897,6 +5898,16 @@ declare module "crypto" {
     export function randomFill(buffer: ArrayBufferView, callback: (err: Error | null, buf: ArrayBufferView) => void): void;
     export function randomFill(buffer: ArrayBufferView, offset: number, callback: (err: Error | null, buf: ArrayBufferView) => void): void;
     export function randomFill(buffer: ArrayBufferView, offset: number, size: number, callback: (err: Error | null, buf: ArrayBufferView) => void): void;
+
+    export interface ScryptOptions {
+        N?: number;
+        r?: number;
+        p?: number;
+        maxmem?: number;
+    }
+    export function scrypt(password: string | ArrayBufferView, salt: string | ArrayBufferView, keylen: number, callback: (err: Error | null, derivedKey: Buffer) => void): void;
+    export function scrypt(password: string | ArrayBufferView, salt: string | ArrayBufferView, keylen: number, options: ScryptOptions, callback: (err: Error | null, derivedKey: Buffer) => void): void;
+    export function scryptSync(password: string | ArrayBufferView, salt: string | ArrayBufferView, keylen: number, options?: ScryptOptions): Buffer;
 
     export interface RsaPublicKey {
         key: string;

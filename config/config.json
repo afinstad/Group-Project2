@@ -5,7 +5,10 @@
     "database": "shop",
     "host": "127.0.0.1",
     "port": 3307,
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "seederStorage": "json",
+    "seederStoragePath": "sequelizeData.json",
+    "seederStorageTableName": "products"
   },
   "test": {
     "username": "root",
