@@ -27,7 +27,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       len: [1]
     },
-    favorite: {
+    purchase: {
       type: DataTypes.BOOLEAN,
       default: false,
       len: [1]
@@ -40,15 +40,10 @@ module.exports = function (sequelize, DataTypes) {
 
   Product.associate = function (models) {
 
-    Product.hasMany(models.Size, {
-      onDelete: "cascade"
-    });
-
     Product.hasMany(models.Review, {
       onDelete: "cascade"
     });
   };
-
 
   return Product;
 };
