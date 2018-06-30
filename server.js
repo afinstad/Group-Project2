@@ -58,19 +58,12 @@ var passport = require('passport');
 // Routes
 
 // require("./routes/html-routes.js")(app);
-require("./routes/product-api-route.js")(app);
-require("./routes/review-api-route.js")(app);
-require("./routes/size-api-route.js")(app);
-require('./db/connection')(app);
-require('./routes/login')(app);
-require('./routes/register')(app);
-require('./routes/profile')(app);
-require('./routes/scarves')(app);
-require('./routes/cart')(app);
-require('./routes/charge')(app);
+require("./controllers/authController.js")(app);
+require("./controllers/protectedController.js")(app);
+require("./controllers/publicController.js")(app);
 
 //where passport auth will be set up
-require('./auth/setup');
+require('./config/passport.js');
 
 
 
@@ -130,13 +123,8 @@ app.get('/*', function(req, res){
 
 
 // Syncing our sequelize models and then starting our Express app
-<<<<<<< HEAD
-// =============================================================
-db.sequelize.sync({ force: false }).then(function() {
-=======
 
 db.sequelize.sync({ force: true }).then(function() {
->>>>>>> 21ec46e96b345055a1858571161fbf01f3f85a54
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
