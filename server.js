@@ -53,35 +53,10 @@ var stripe = require("stripe")("sk_test_dOFWIEyJc2fkOc8XzHtKTadE");
 require("./routes/product-api-route.js")(app);
 require("./routes/review-api-route.js")(app);
 
-// Hodan
-require("./controllers/authController.js")(app);
-require("./controllers/protectedController.js")(app);
-require("./controllers/publicController.js")(app);
 
-// Hodan
-//where passport auth will be set up
-require('./config/passport.js');
-
-// Hodan
-//following routes require auth
-app.use('/private', ensureAuthenticated);
-
-app.get('/private/secretInfo', function(req, res){
-  console.log('Sending secret info');
-  res.send('This is very secret');
-});
-function ensureAuthenticated(req, res, next){
-  console.log('Ensuring the user is authenticated');
-  if(req.isAuthenticated()){
-    next();
-  } else {
-    res.sendStatus(401);
-  }
-}
-
-app.get('/*', function(req, res){
-  res.sendFile(path.join(__dirname, 'public/views/index.html'));
-});
+// app.get('/*', function(req, res){
+//   res.sendFile(path.join(__dirname, 'public/views/index.html'));
+// });
 
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync({ force: true }).then(function() {
