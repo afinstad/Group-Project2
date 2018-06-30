@@ -1,4 +1,10 @@
 
+// *** Dependencies
+var express = require("express");
+var bodyParser = require("body-parser");
+var path = require('path');
+
+// Hodan/Iles
 require("dotenv").config()
 var PUB_KEY = process.env.PUB_KEY
 var SECRET_KEY = process.env.SECRET_KEY
@@ -18,26 +24,17 @@ const charge = stripe.charges.create(
     console.log (res)
 })
 
-// *****************************************************************************
-// Server.js - This file is the initial starting point for the Node/Express server.
-//
-// ******************************************************************************
-// *** Dependencies
 
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require('path');
 
 // Sets up the Express App
-
 var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 var db = require("./models");
 
+// Iles
 // Sets up the Express app to handle data parsing
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
@@ -56,8 +53,11 @@ var session = require('express-session');
 var passport = require('passport');
 
 // Routes
+// Ben
+require("./routes/product-api-route.js")(app);
+require("./routes/review-api-route.js")(app);
 
-// require("./routes/html-routes.js")(app);
+// Hodan
 require("./controllers/authController.js")(app);
 require("./controllers/protectedController.js")(app);
 require("./controllers/publicController.js")(app);
@@ -66,12 +66,11 @@ require("./controllers/publicController.js")(app);
 require('./config/passport.js');
 
 
-
+// Hodan
 connection.connect();
 
-
+//Iles
 //sessionConfig that happens before passport will be. specifying cookie info
-
 var sessionConfig = {
   //not shared with people. searches for it in the environment
   secret: process.env.SECRET || 'super secrect key goes here',
@@ -84,22 +83,12 @@ var sessionConfig = {
   }
 }
 
+//Iles
 app.use(session(sessionConfig));
 app.use(bodyParser.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-//no auth needed where route folders will go
-app.use('/login', login);
-app.use('/register', register);
-app.use('/person', profile);
-app.use('/scarf', scarves);
-app.use('/carts', cart);
-app.use('/charge', charge);
-app.get('/loginStatus', function (req,res){
-  res.send(req.isAuthenticated());
-})
 
 //following routes require auth
 app.use('/private', ensureAuthenticated);
