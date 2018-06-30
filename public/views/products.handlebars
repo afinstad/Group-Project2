@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products Page</title>
+    <script src="/public/js/products.js"></script>
+</head>
+<body>
+
+
+<script> //need script type
+    //send POST request for add to favorites/cart
+
+    $.ajax("/shoppingcart/", {
+        type: "POST",
+        data: newFavorite
+    }).then(
+        function() {
+            console.log("added a favorite");
+            //Reload the page to get the updated list
+            location.reload();
+        }
+    );
+ });
+
+//so that data doesn't go to default when clicking on buttons
+
+$("#updateItem").on("submit", function(event){
+    event.preventDefault();
+
+    var id = $("[name=id]").val().trim()
+
+    var updatedItem = {
+        item: $("#updatedItem [name=Item]").val().trim()
+    };
+//How can these be done differently? 
+//I think the issue is - multiple AJAX calls for different items on the same page? 
+//GET request for chiffon -- need GET for each fabric being called
+
+  $(document).ready(function(){
+       $("navbar-category").click(function(){
+           //what goes in the ""?
+           $.get("", function(data, status){
+               //what goes in ()?
+               alert()
+           });
+       });
+   });
+
+</script>
+
+</body>
+</html>
