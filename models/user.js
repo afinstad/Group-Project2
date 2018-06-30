@@ -1,3 +1,5 @@
+//Hodan's File
+
 module.exports = function(sequelize, Sequelize) {
 
 	var User = sequelize.define('user', {

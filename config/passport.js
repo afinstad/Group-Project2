@@ -1,3 +1,5 @@
+//Hodan's File
+
 //load bcrypt
 var bCrypt = require('bcrypt-nodejs');
 
@@ -6,11 +8,9 @@ module.exports = function (passport, user) {
   var User = user;
   var LocalStrategy = require('passport-local').Strategy;
 
-
   passport.serializeUser(function (user, done) {
     done(null, user.id);
   });
-
 
   // used to deserialize the user
   passport.deserializeUser(function (id, done) {
@@ -22,12 +22,9 @@ module.exports = function (passport, user) {
         done(user.errors, null);
       }
     });
-
   });
 
-
   passport.use('local-signup', new LocalStrategy(
-
     {
       usernameField: 'email',
       passwordField: 'password',
@@ -35,7 +32,6 @@ module.exports = function (passport, user) {
     },
 
     function (req, email, password, done) {
-
 
       var generateHash = function (password) {
         return bCrypt.hashSync(password, bCrypt.genSaltSync(8), null);
@@ -57,7 +53,6 @@ module.exports = function (passport, user) {
             lastname: req.body.lastname
           };
 
-
           User.create(data).then(function (newUser, created) {
             if (!newUser) {
               return done(null, false);
@@ -65,22 +60,11 @@ module.exports = function (passport, user) {
 
             if (newUser) {
               return done(null, newUser);
-
             }
-
-
           });
         }
-
-
       });
-
-
-
     }
-
-
-
   ));
 
   //LOCAL SIGNIN
@@ -110,24 +94,17 @@ module.exports = function (passport, user) {
         if (!isValidPassword(user.password, password)) {
 
           return done(null, false, { message: 'Incorrect password.' });
-
         }
 
         var userinfo = user.get();
 
         return done(null, userinfo);
-
+        
       }).catch(function (err) {
-
         console.log("Error:", err);
-
         return done(null, false, { message: 'Something went wrong with your Signin' });
-
-
       });
-
     }
   ));
-
 }
 
