@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
 
     <!--Glyphicons & Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -27,12 +28,12 @@
 
 <body>
 
-    <!-- Hamburger Menu Activated Sidebar -->
+    <!-- Hamburger Menu Activated Sidebar (Hidden until the Hamburger Menu Icon is clicked -->
     <div class="container hamburger-menu-class" id="hamburger-menu">
         <div class="row">
 
             <div class="col-lg-6 text-center">
-                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-times-circle" id="close-hamburger-menu"></i>
             </div>
 
             <div class="col-lg-6">
@@ -43,19 +44,17 @@
             <div class="col text-center">
 
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
                     <li>Category</li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#chiffon-category">
                         <a href="../views/products.html" class="navbar-category">Chiffon</a>
                     </li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#viscose-category">
                         <a href="../views/products.html" class="navbar-category">Viscose</a>
                     </li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#jersey-category">
                         <a href="../views/products.html" class="navbar-category">Jersey</a>
                     </li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#printed-category">
                         <a href="../views/products.html" class="navbar-category">Printed</a>
                     </li>
                 </ul>
@@ -76,12 +75,14 @@
 
             <!-- Logo -->
             <div class="col-lg-8 text-center nav-top" id="site-logo">
-                <h1>HIJAB</h1>
+                <a href="index.html" class="site-logo-link">
+                    <h1>HIJAB</h1>
+                </a>
             </div>
 
             <!-- Checkout -->
-            <div class="col-lg-2 text-center nav-top" id="shopping-cart">
-                <i class="fas fa-shopping-cart" id="shopping-cart-icon"></i>
+            <div class="col-lg-2 text-center nav-top" id="shopping-cart-icon">
+                <i class="fas fa-shopping-cart"></i>
             </div>
 
         </div>
@@ -109,6 +110,59 @@
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Activated Sidebar (Hidden until the Shopping Cart Icon is clicked -->
+    <div class="container shopping-cart-class" id="shopping-cart">
+        <div class="row">
+
+            <!-- Empty Div For Close Menu Icon Placement -->
+            <div class="col-lg-6">
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <i class="fas fa-times-circle" id="close-shopping-cart"></i>
+            </div>
+        </div>
+
+        <div class="row shopping-cart-product">
+            <div class="col-lg-4">
+                <div>
+                    <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-lg-8 text-left">
+                <p class="product-name">Product Name</p>
+                <p class="product-price">Price</p>
+                <p class="purchase">Remove from Cart</p>
+            </div>
+        </div>
+
+        <div class="row shopping-cart-product">
+            <div class="col-lg-4">
+                <div>
+                    <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-lg-8 text-left">
+                <p class="product-name">Product Name</p>
+                <p class="product-price">Price</p>
+                <p class="purchase">Remove from Cart</p>
+            </div>
+        </div>
+
+        <div class="row shopping-cart-product">
+            <div class="col-lg-4">
+                <div>
+                    <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-lg-8 text-left">
+                <p class="product-name">Product Name</p>
+                <p class="product-price">Price</p>
+                <p class="purchase">Remove from Cart</p>
             </div>
         </div>
     </div>
