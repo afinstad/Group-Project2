@@ -1,3 +1,5 @@
+-- Ben's File
+
 INSERT INTO products (name, category, description, cost, quantity, purchase, photo) VALUES ('exChiffon1', "Ombre", 'here is where a description would go', 15.99, 8000, false, './public/images/ombre.maroon.teal.navy.png');
 INSERT INTO products (name, category, description, cost, quantity, purchase, photo) VALUES ('exChiffon2', "Ombre", 'here is where a description would go', 16.99, 8000, false, './public/images/ombre.mustard.png');
 INSERT INTO products (name, category, description, cost, quantity, purchase, photo) VALUES ('exChiffon3', "Ombre", 'here is where a description would go', 17.99, 8000, false, './public/images/ombre.navypng');
