@@ -39,8 +39,6 @@ module.exports = function(app) {
 
   // Get route for retrieving products by category
   app.get("/api/products/:category", function(req, res) {
-    // Adding an "include" property to our options in our findAll query
-    // This will allow us to pull the reviews for that product
     db.Product.findOne({
       where: {
         category: req.params.category
