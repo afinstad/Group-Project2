@@ -1,6 +1,6 @@
 #Hijab
 
-Hijab, is a Amazon-like storefront that allows interested buyers to pusrchase chic, In-style hijab's. This website will take orders from interested customers and deplete stock from the store's inventory. Here at Hijab we believe no matter the event, your hijab should rise to the occasion and elevate — never impede — your outfit! In order to build a world where women have beautiful options for every occasion, we’ve designed an affordable hijab website using various libraries. 
+Hijab, is a Amazon-like storefront that allows interested buyers to purchase chic, In-style hijab's. This website will take orders from interested customers and deplete stock from the store's inventory. Here at Hijab we believe no matter the event, your hijab should rise to the occasion and elevate — never impede — your outfit! In order to build a world where women have beautiful options for every occasion, we’ve designed an affordable hijab website using various libraries. 
 
 #Video Demo
 --------------
