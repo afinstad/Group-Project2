@@ -219,13 +219,14 @@ module.exports = {
     ])
   },
 
-  // down: (queryInterface, Sequelize) => {
-  //   /*
-  //     Add reverting commands here.
-  //     Return a promise to correctly handle asynchronicity.
+  down: (queryInterface, Sequelize) => {
+    queryInterface.bulkDelete('products', null, {});
+    /*
+      Add reverting commands here.
+      Return a promise to correctly handle asynchronicity.
 
-  //     Example:
-  //     return queryInterface.bulkDelete('Person', null, {});
-  //   */
-  // }
+      Example:
+      return queryInterface.bulkDelete('Person', null, {});
+    */
+  }
 };
