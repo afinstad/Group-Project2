@@ -9,7 +9,7 @@ module.exports = {
     return queryInterface.bulkInsert('products', [
       {
         name: 'exChiffon1',
-        category: "Ombre",
+        category: "Chiffon",
         description: 'here is where a description would go',
         cost: 15.99,
         quantity: 8000,
@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         name: 'exChiffon2',
-        category: "Ombre",
+        category: "Chiffon",
         description: 'here is where a description would go',
         cost: 16.99,
         quantity: 8000,
@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         name: 'exChiffon3',
-        category: "Ombre",
+        category: "Chiffon",
         description: 'here is where a description would go',
         cost: 17.99,
         quantity: 8000,
@@ -42,7 +42,7 @@ module.exports = {
       },
       {
         name: 'exChiffon4',
-        category: "Ombre",
+        category: "Chiffon",
         description: 'here is where a description would go',
         cost: 18.99,
         quantity: 8000,
@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         name: 'exViscose1',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 15.99,
         quantity: 8000,
@@ -64,7 +64,7 @@ module.exports = {
       },
       {
         name: 'exViscose2',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 16.99,
         quantity: 8000,
@@ -75,7 +75,7 @@ module.exports = {
       },
       {
         name: 'exViscose3',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 17.99,
         quantity: 8000,
@@ -86,7 +86,7 @@ module.exports = {
       },
       {
         name: 'exViscose4',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 18.99,
         quantity: 8000,
@@ -97,7 +97,7 @@ module.exports = {
       },
       {
         name: 'exViscose5',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 19.99,
         quantity: 8000,
@@ -108,7 +108,7 @@ module.exports = {
       },
       {
         name: 'exViscose6',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 20.99,
         quantity: 8000,
@@ -119,7 +119,7 @@ module.exports = {
       },
       {
         name: 'exViscose7',
-        category: "Ombre",
+        category: "Viscose",
         description: 'here is where a description would go',
         cost: 21.99,
         quantity: 8000,
@@ -130,7 +130,7 @@ module.exports = {
       },
       {
         name: 'exJersey1',
-        category: "Ombre",
+        category: "Jersey",
         description: 'here is where a description would go',
         cost: 15.99,
         quantity: 8000,
@@ -141,7 +141,7 @@ module.exports = {
       },
       {
         name: 'exJersey2',
-        category: "Ombre",
+        category: "Jersey",
         description: 'here is where a description would go',
         cost: 16.99,
         quantity: 8000,
@@ -152,7 +152,7 @@ module.exports = {
       },
       {
         name: 'exJersey3',
-        category: "Ombre",
+        category: "Jersey",
         description: 'here is where a description would go',
         cost: 17.99,
         quantity: 8000,
@@ -163,7 +163,7 @@ module.exports = {
       },
       {
         name: 'exJersey4',
-        category: "Ombre",
+        category: "Jersey",
         description: 'here is where a description would go',
         cost: 18.99,
         quantity: 8000,
@@ -174,7 +174,7 @@ module.exports = {
       },
       {
         name: 'exPrinted1',
-        category: "Ombre",
+        category: "Printed",
         description: 'here is where a description would go',
         cost: 15.99,
         quantity: 8000,
@@ -185,7 +185,7 @@ module.exports = {
       },
       {
         name: 'exPrinted2',
-        category: "Ombre",
+        category: "Printed",
         description: 'here is where a description would go',
         cost: 16.99,
         quantity: 8000,
@@ -196,7 +196,7 @@ module.exports = {
       },
       {
         name: 'exPrinted3',
-        category: "Ombre",
+        category: "Printed",
         description: 'here is where a description would go',
         cost: 17.99,
         quantity: 8000,
@@ -207,7 +207,7 @@ module.exports = {
       },
       {
         name: 'exPrinted4',
-        category: "Ombre",
+        category: "Printed",
         description: 'here is where a description would go',
         cost: 18.99,
         quantity: 8000,
