@@ -132,14 +132,29 @@
 
             <div class="col-lg-6 text-center">
                 <i class="fas fa-times-circle" id="close-shopping-cart"></i>
-            </div>
+                <form action="/charge" method="post">
+                    <script
+                        src ="https://checkout.stripe.com/checkout.js"
+                        class = "stripe-button"
+                        data-key = "pk_test_kPEQ7BsycmmOqeEiES2qT6eW"
+                        data-amount = "5.00"
+                        data-name = "HIJAB"
+                        data-description = "Quality hijabs for your everyday needs"
+                        data-locale = "auto"
+                        data-currency = "USD"
+                    ></script>
+                    <input type="hidden" name="chargeAmount" value= "10.00">
+                </form>
+              
         </div>
 
         <div class="row shopping-cart-product">
             <div class="col-lg-4">
                 <div>
+            
                     <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
                 </div>
+            </div>
             </div>
             <div class="col-lg-8 text-left">
                 <p class="product-name">Product Name</p>
@@ -186,6 +201,10 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="First slide">
+                <button type= "submit" name= "submit1" class="btn btn fefault cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    Add to cart
+                </button>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Second slide">
