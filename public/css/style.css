@@ -44,6 +44,15 @@
     margin: 20px;
     float: left;
 }
+
+.product button {
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 20px;
+    float: left;
+}
+
     .StripeElement {
         background-color: white;
         height: 40px;
