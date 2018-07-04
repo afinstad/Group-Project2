@@ -24,7 +24,7 @@ module.exports = function(app) {
   });
 
   // Get route for retrieving a single product
-  app.get("/api/products/:id", function(req, res) {
+  app.get("/api/products/id/:id", function(req, res) {
     // Adding an "include" property to our options in our findOne query
     // This will allow us to pull the reviews for that product
     db.Product.findOne({
@@ -38,10 +38,10 @@ module.exports = function(app) {
   });
 
   // Get route for retrieving products by category
-  app.get("/api/products/:category", function(req, res) {
-    // Adding an "include" property to our options in our findAll query
-    // This will allow us to pull the reviews for that product
-    db.Product.findOne({
+  app.get("/api/products/category/:category", function(req, res) {
+    console.log ("============================");
+    console.log (req.params);
+    db.Product.findAll({
       where: {
         category: req.params.category
       },
