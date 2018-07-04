@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
 
-
     <!--Glyphicons & Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -45,29 +44,20 @@
             <div class="col text-center">
 
                 <ul>
-                    <li>Home <a href="../views/index.html" id="home"></a></li>
-                    <li> User <a href="../views/login.html" id="login"></a></li>
-                    <li class="indented-list">
-                    <a href="../views/Createlogin.html" id="newacct">Create Account</a>
-                    </li>
-                    <li class="indented-list">
-                            <a href="../views/login.html" id="login">Log In</a>
-                            </li>
                     <li>Category</li>
-                    <li class="indented-list">
-                        <a href="../views/chiffon.html" class="navbar-category">Chiffon</a>
+                    <li class="indented-list" id="#chiffon-category">
+                        <a href="../views/products.html" class="navbar-category">Chiffon</a>
                     </li>
-                    <li class="indented-list">
-                        <a href="../views/viscose.html" class="navbar-category">Viscose</a>
+                    <li class="indented-list" id="#viscose-category">
+                        <a href="../views/products.html" class="navbar-category">Viscose</a>
                     </li>
-                    <li class="indented-list">
-                        <a href="../views/jersey.html" class="navbar-category">Jersey</a>
+                    <li class="indented-list" id="#jersey-category">
+                        <a href="../views/products.html" class="navbar-category">Jersey</a>
                     </li>
-                    <li class="indented-list">
-                        <a href="../views/printed.html" class="navbar-category">Printed</a>
+                    <li class="indented-list" id="#printed-category">
+                        <a href="../views/products.html" class="navbar-category">Printed</a>
                     </li>
                 </ul>
-                <li> Checkout <a href="../views/register.html" id="checkout"></a></li>
             </div>
         </div>
     </div>
@@ -85,7 +75,9 @@
 
             <!-- Logo -->
             <div class="col-lg-8 text-center nav-top" id="site-logo">
-                <h1>HIJAB</h1>
+                <a href="index.html" class="site-logo-link">
+                    <h1>HIJAB</h1>
+                </a>
             </div>
 
             <!-- Checkout -->
@@ -101,20 +93,20 @@
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Chiffon</a>
+                <a href="../views/products.html" class="navbar-category" id="chiffon-category">Chiffon</a>
 
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Viscose</a>
+                <a href="../views/products.html" class="navbar-category" id="viscose-category">Viscose</a>
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Jersey</a>
+                <a href="../views/products.html" class="navbar-category" id="jersey-category">Jersey</a>
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Printed</a>
+                <a href="../views/products.html" class="navbar-category" id="printed-category">Printed</a>
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
@@ -217,13 +209,13 @@
 
     <!-- JavaScript -->
     <!-- jQuery first, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="../js/navbar.js"></script>
     <script type="text/javascript" src="../js/checkout.js"></script>
+    <script type="text/javascript" src="../js/products.js"></script>
 </body>
 
 </html>
