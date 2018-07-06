@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
 
+
     <!--Glyphicons & Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -28,12 +29,12 @@
 
 <body>
 
-    <!-- Hamburger Menu Activated Sidebar -->
+    <!-- Hamburger Menu Activated Sidebar (Hidden until the Hamburger Menu Icon is clicked -->
     <div class="container hamburger-menu-class" id="hamburger-menu">
         <div class="row">
 
             <div class="col-lg-6 text-center">
-                <i class="fas fa-times-circle"></i>
+                <i class="fas fa-times-circle" id="close-hamburger-menu"></i>
             </div>
 
             <div class="col-lg-6">
@@ -44,19 +45,17 @@
             <div class="col text-center">
 
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
                     <li>Category</li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#chiffon-category">
                         <a href="../views/products.html" class="navbar-category">Chiffon</a>
                     </li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#viscose-category">
                         <a href="../views/products.html" class="navbar-category">Viscose</a>
                     </li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#jersey-category">
                         <a href="../views/products.html" class="navbar-category">Jersey</a>
                     </li>
-                    <li class="indented-list">
+                    <li class="indented-list" id="#printed-category">
                         <a href="../views/products.html" class="navbar-category">Printed</a>
                     </li>
                 </ul>
@@ -77,12 +76,14 @@
 
             <!-- Logo -->
             <div class="col-lg-8 text-center nav-top" id="site-logo">
-                <h1>HIJAB</h1>
+                <a href="index.html" class="site-logo-link">
+                    <h1>HIJAB</h1>
+                </a>
             </div>
 
             <!-- Checkout -->
-            <div class="col-lg-2 text-center nav-top" id="shopping-cart" a href="../views/checkout.html">
-                <i class="fas fa-shopping-cart" id="shopping-cart-icon" a href="../views/checkout.html" ></i>
+            <div class="col-lg-2 text-center nav-top" id="shopping-cart-icon">
+                <i class="fas fa-shopping-cart"></i>
             </div>
 
         </div>
@@ -93,25 +94,81 @@
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Chiffon</a>
+                <a href="../views/products.html" class="navbar-category" id="chiffon-category">Chiffon</a>
 
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Viscose</a>
+                <a href="../views/products.html" class="navbar-category" id="viscose-category">Viscose</a>
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Jersey</a>
+                <a href="../views/products.html" class="navbar-category" id="jersey-category">Jersey</a>
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
-                <a href="../views/products.html" class="navbar-category">Printed</a>
+                <a href="../views/products.html" class="navbar-category" id="printed-category">Printed</a>
             </div>
 
             <div class="col-lg-2 text-center nav-bottom">
             </div>
         </div>
+    </div>
+
+    <!-- Shopping Cart Activated Sidebar (Hidden until the Shopping Cart Icon is clicked -->
+    <div class="container shopping-cart-class" id="shopping-cart">
+        <div class="row">
+
+            <!-- Empty Div For Close Menu Icon Placement -->
+            <div class="col-lg-6">
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <i class="fas fa-times-circle" id="close-shopping-cart"></i>
+            </div>
+        </div>
+
+        <div class="row shopping-cart-product">
+            <div class="col-lg-4">
+                <div>
+                    <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-lg-8 text-left">
+                <p class="product-name">Product Name</p>
+                <p class="product-price">Price</p>
+                <p class="purchase">Remove from Cart</p>
+            </div>
+        </div>
+
+        <div class="row shopping-cart-product">
+            <div class="col-lg-4">
+                <div>
+                    <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-lg-8 text-left">
+                <p class="product-name">Product Name</p>
+                <p class="product-price">Price</p>
+                <p class="purchase">Remove from Cart</p>
+            </div>
+        </div>
+
+        <div class="row shopping-cart-product">
+            <div class="col-lg-4">
+                <div>
+                    <img class="d-block" src="http://via.placeholder.com/100x100" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-lg-8 text-left">
+                <p class="product-name">Product Name</p>
+                <p class="product-price">Price</p>
+                <p class="purchase">Remove from Cart</p>
+            </div>
+        </div>
+
+        <button id="checkout-button">Proceed To Checkout!</button>
+
     </div>
 
 
@@ -127,11 +184,12 @@
             <!-- Products Section / Products Display Here -->
             <div class="col-lg-8" id="products-div">
 
+
                 <div class="float-left product">
                     <img class="d-block w-100" src="http://via.placeholder.com/100x100" alt="Product Image">
                     <p class="product-name">Product Name</p>
                     <p class="product-price">Price</p>
-                    <p class="purchase">+ Add to Cart</p>
+                    <button class="product">+ Add Item to Cart</button>
 
                 </div>
 
@@ -139,7 +197,7 @@
                     <img class="d-block w-100" src="http://via.placeholder.com/100x100" alt="Product Image">
                     <p class="product-name">Product Name</p>
                     <p class="product-price">Price</p>
-                    <p class="purchase">+ Add to Cart</p>
+                    <button class="product">+ Add Item to Cart</button>
 
                 </div>
 
@@ -147,31 +205,7 @@
                     <img class="d-block w-100" src="http://via.placeholder.com/100x100" alt="Product Image">
                     <p class="product-name">Product Name</p>
                     <p class="product-price">Price</p>
-                    <p class="purchase">+ Add to Cart</p>
-
-                </div>
-
-                <div class="float-left product">
-                    <img class="d-block w-100" src="http://via.placeholder.com/100x100" alt="Product Image">
-                    <p class="product-name">Product Name</p>
-                    <p class="product-price">Price</p>
-                    <p class="purchase">+ Add to Cart</p>
-
-                </div>
-
-                <div class="float-left product">
-                    <img class="d-block w-100" src="http://via.placeholder.com/100x100" alt="Product Image">
-                    <p class="product-name">Product Name</p>
-                    <p class="product-price">Price</p>
-                    <p class="purchase">+ Add to Cart</p>
-
-                </div>
-
-                <div class="float-left product">
-                    <img class="d-block w-100" src="http://via.placeholder.com/100x100" alt="Product Image">
-                    <p class="product-name">Product Name</p>
-                    <p class="product-price">Price</p>
-                    <p class="purchase">+ Add to Cart</p>
+                    <button class="product">+ Add Item to Cart</button>
 
                 </div>
 
@@ -197,11 +231,13 @@
 
     <!-- JavaScript -->
     <!-- jQuery first, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../views/index.html"></script>
+
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/checkout.js"></script>
+    <script type="text/javascript" src="../js/products.js"></script>
 </body>
 
 </html>
