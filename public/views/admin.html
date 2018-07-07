@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Admin Page</title>
 </head>
 
@@ -14,20 +15,21 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Welcome to the Administrator Page!</h1>
-            <p class="lead">Here you can add new items to the shop!</p>
+            <h1 class="display-4 text-center">Welcome to the Administrator Page!</h1>
+            <p class="lead text-center">Here you can add new items to the shop!</p>
         </div>
     </div>
 
+    <div class="container">
     <form>
         <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 rounded-0">
                 <label for="inputProduct">Product</label>
-                <input type="text" class="form-control" id="inputProduct" placeholder="What is the name of this product?">
+                <input type="text" class="form-control rounded-0" id="inputProduct" placeholder="What is the name of this product?">
             </div>
-            <div class="form-group">
+            <div class="form-group rounded-0">
                 <label for="categorySelect">Which Category does this belong in?</label>
-                <select class="form-control" id="categorySelect">
+                <select class="form-control rounded-0" id="categorySelect">
                     <option>Chiffon</option>
                     <option>Viscose</option>
                     <option>Jersey</option>
@@ -35,29 +37,33 @@
                 </select>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group rounded-0">
             <label for="inputDescription">Description</label>
-            <input type="text" class="form-control" id="inputDescription" placeholder="Tell us a little about this product.">
+            <input type="text" class="form-control rounded-0" id="inputDescription" placeholder="Tell us a little about this product.">
         </div>
-        <div class="form-group">
+        <div class="form-group rounded-0 col-lg-2 col-md-2 col-sm-2">
             <label for="inputCost">Cost</label>
-            <input type="text" class="form-control" id="inputCost" placeholder="$0.00">
+            <input type="text" class="form-control rounded-0" id="inputCost" placeholder="$0.00">
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="form-row rounded-0">
+            <div class="form-group col-md-6 rounded-0">
                 <label for="inputQuantity">Quantity</label>
-                <input type="text" class="form-control" id="inputQuantity">
+                <input type="text" class="form-control rounded-0" id="inputQuantity">
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="form-row rounded-0">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 <label for="inputImagey">Image</label>
-                <input type="text" class="form-control" id="inputImage" placeholder="Please provide a link for an image here.">
+                <input type="text" class="form-control rounded-0" id="inputImage" placeholder="Please provide a link for an image here.">
             </div>
         </div>
-        <button type="submit" class="btn btn-primary" id="add-product">Add Product</button>
+        <button type="submit" class="btn btn-primary rounded-0" id="add-product">Add Product</button>
     </form>
+    </div>
 
+    <div class="container-fluid text-center footer">
+        <i class="fas fa-copyright"></i>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </body>
 
