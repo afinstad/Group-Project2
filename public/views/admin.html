@@ -2,16 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    
+        <!--Glyphicons & Fonts-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <!-- 
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-family: 'Open Sans', sans-serif; 
+        -->
     <title>Admin Page</title>
 </head>
 
 <body>
+        <!-- Hamburger Menu Activated Sidebar (Hidden until the Hamburger Menu Icon is clicked -->
+        <div class="container hamburger-menu-class" id="hamburger-menu">
+                <div class="row">
+        
+                    <div class="col-lg-6 text-center">
+                        <i class="fas fa-times-circle" id="close-hamburger-menu"></i>
+                    </div>
+        
+                    <div class="col-lg-6">
+        
+                    </div>
+        
+        
+                    <div class="col text-center">
+        
+                        <ul>
+                            <li>Category</li>
+                            <li class="indented-list" id="#chiffon-category">
+                                <a href="products.html" class="navbar-category">Chiffon</a>
+                            </li>
+                            <li class="indented-list" id="#viscose-category">
+                                <a href="products.html" class="navbar-category">Viscose</a>
+                            </li>
+                            <li class="indented-list" id="#jersey-category">
+                                <a href="products.html" class="navbar-category">Jersey</a>
+                            </li>
+                            <li class="indented-list" id="#printed-category">
+                                <a href="products.html" class="navbar-category">Printed</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- NavBar -->
+            <div class="container-fluid" id="navbar">
+        
+                <!-- Top Row -->
+                <div class="row" id="navbar-top">
+        
+                    <!-- Hamburger Menu -->
+                    <div class="col-lg-2 text-center nav-top" id="hamburger-menu-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+        
+                    <!-- Logo -->
+                    <div class="col-lg-8 text-center nav-top" id="site-logo">
+                        <a href="index.html" class="site-logo-link">
+                            <h1>HIJAB</h1>
+                        </a>
+                    </div>
+        
+                    <!-- Checkout -->
+                    <div class="col-lg-2 text-center nav-top" id="shopping-cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+        
+                </div>
+        
+                <!-- Bottom Row -->
+                <div class="row" id="navbar-bottom">
+                    <div class="col-lg-2 text-center nav-bottom">
+                    </div>
+        
+                    <div class="col-lg-2 text-center nav-bottom">
+                        <a href="products.html" class="navbar-category" id="chiffon-category">Chiffon</a>
+        
+                    </div>
+        
+                    <div class="col-lg-2 text-center nav-bottom">
+                        <a href="products.html" class="navbar-category" id="viscose-category">Viscose</a>
+                    </div>
+        
+                    <div class="col-lg-2 text-center nav-bottom">
+                        <a href="products.html" class="navbar-category" id="jersey-category">Jersey</a>
+                    </div>
+        
+                    <div class="col-lg-2 text-center nav-bottom">
+                        <a href="products.html" class="navbar-category" id="printed-category">Printed</a>
+                    </div>
+        
+                    <div class="col-lg-2 text-center nav-bottom">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Shopping Cart Activated Sidebar (Hidden until the Shopping Cart Icon is clicked -->
+            <div class="container shopping-cart-class" id="shopping-cart">
+                <div class="row">
+        
+                    <!-- Empty Div For Close Menu Icon Placement -->
+                    <div class="col-lg-6">
+                    </div>
+        
+                    <div class="col-lg-6 text-center">
+                        <i class="fas fa-times-circle" id="close-shopping-cart"></i>
+                    </div>
+                </div>
+        
+                <div class="row shopping-cart-product">
+                    <div class="col-lg-4">
+                        <div>
+                            <img class="d-block" src="https://cdn.shopify.com/s/files/1/0872/1324/products/Charcoal_Grey_Premium_Jersey_f6764a04-0cf7-47d3-accc-46e6ef0abbcd_1024x1024.jpg?v=1512665764" alt="Product Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-left">
+                        <p class="product-name"><strong>exJersey3</strong></p>
+                        <p class="product-price"><strong>17.99</strong></p>
+                        <p class="purchase">Remove from Cart</p>
+                    </div>
+                </div>
+        
+                <div class="row shopping-cart-product">
+                    <div class="col-lg-4">
+                        <div>
+                            <img class="d-block" src="https://cdn.shopify.com/s/files/1/0872/1324/products/Casablanca_Chrome_Chiffon_Wrap_1024x1024.jpg?v=1501556193" alt="Product Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-left">
+                        <p class="product-name"><strong>exPrinted1</strong></p>
+                        <p class="product-price"><strong>15.99</strong></p>
+                        <p class="purchase">Remove from Cart</p>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p><strong>Total:</strong>$ 33.98</p>
+                    </div>
+                </div>
+        
+                <form action="/charge" method="post">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_kPEQ7BsycmmOqeEiES2qT6eW" data-amount="5.00"
+                        data-name="HIJAB" data-description="Quality hijabs for your everyday needs" data-locale="auto" data-currency="USD"></script>
+                    <input type="hidden" name="chargeAmount" value="10.00">
+                </form>
+        
+            </div>
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
