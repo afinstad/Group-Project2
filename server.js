@@ -12,6 +12,7 @@ var db = require("./models");
 // Sets up the Express App
 var app = express();
 var PORT = process.env.PORT || 8080;
+app.use(express.static('public'))
 
 // // Ileys
 // require("dotenv").config()
@@ -52,6 +53,7 @@ var PORT = process.env.PORT || 8080;
 // Ben
 require("./routes/product-api-route.js")(app);
 require("./routes/review-api-route.js")(app);
+require("./routes/routes-html.js")(app);
 
 
 // app.get('/*', function(req, res){
