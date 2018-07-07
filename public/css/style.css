@@ -16,10 +16,6 @@
     margin: 10px;
 }
 
-img.d-block {
-    max-height: 200px;
-    max-width: 498px;
-}
 
 /************** Home Page Styles *************/
 #index-carousel {
@@ -29,10 +25,8 @@ img.d-block {
 }
 
 
-/************** Admin Page Style *************/
-.jumbotron {
-    background-color: #F7C9B8
-}
+
+
 
 /************** Product Page Styles *************/
 
@@ -42,6 +36,10 @@ img.d-block {
     border-style: solid;
     border-width: 1px;
     border-color: #707070;
+}
+
+.product img {
+    width: 100%;
 }
 
 .product p {
@@ -81,4 +79,3 @@ img.d-block {
       .StripeElement--webkit-autofill {
         background-color: #fefde5 !important;
       }
-
