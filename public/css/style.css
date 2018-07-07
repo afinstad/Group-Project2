@@ -16,6 +16,10 @@
     margin: 10px;
 }
 
+img.d-block {
+    max-height: 200px;
+    max-width: 498px;
+}
 
 /************** Home Page Styles *************/
 #index-carousel {
