@@ -9,6 +9,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Admin Page</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="/js/admin.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     </div>
 
     <div class="container">
-    <form>
+
         <div class="form-row">
             <div class="form-group col-md-6 rounded-0">
                 <label for="inputProduct">Product</label>
@@ -57,8 +59,8 @@
                 <input type="text" class="form-control rounded-0" id="inputImage" placeholder="Please provide a link for an image here.">
             </div>
         </div>
-        <button type="submit" class="btn btn-primary rounded-0" id="add-product">Add Product</button>
-    </form>
+        <button class="btn btn-primary rounded-0" id="add-product">Add Product</button>
+
     </div>
 
     <div class="container-fluid text-center footer">

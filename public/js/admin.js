@@ -1,6 +1,6 @@
 $(function () {
 
-    $("#add-product").on("submit", function (event) {
+    $("#add-product").on("click", function (event) {
         // preventDefault on a submit event.
         event.preventDefault();
 
@@ -12,14 +12,13 @@ $(function () {
             quantity: $("#inputQuantity").val().trim(),
             purchase: false,
             photo: $("#inputImage").val().trim(),
-            createdAt: new Date(),
-            updatedAt: new Date()
         };
 
         // Send the POST request.
         $.ajax("/api/products", {
             type: "POST",
-            data: newProduct
+            contentType:'application/json',
+            data: JSON.stringify(newProduct)
         }).then(
             function () {
                 console.log("Added a new product");

@@ -51,22 +51,18 @@ module.exports = function (app) {
 
   // POST route for saving a new product
   app.post("/api/products", function (req, res) {
-    db.Post.create([
-      'name', 'category', 'description',
-      'cost', 'quantity', 'purchase', 'photo', 'createdAt', 'updatedAt'
-    ], [
-        req.body.name,
-        req.body.category,
-        req.body.description,
-        req.body.cost,
-        req.body.quantity,
-        req.body.purchase,
-        req.body.photo,
-        req.body.createdAt,
-        req.body.updatedAt
-      ]).then(function (dbProduct) {
-        res.json(dbProduct);
-      });
+    db.Product.create({
+        name: req.body.name,
+        category: req.body.category,
+        description: req.body.description,
+        cost: req.body.cost,
+        quantity: req.body.quantity,
+        purchase: req.body.purchase,
+        photo: req.body.photo,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }).then(dbProduct => res.json(dbProduct))
+      .catch(ress => res.status(400).send({err: ress.parent.sqlMessage}));
   });
 
   // DELETE route for deleting products
