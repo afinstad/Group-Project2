@@ -12,6 +12,11 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <!--  Links for Shopping Cart Plug-in-->
+    <link rel="stylesheet" href="/path/to/bootstrap.min.css">
+    <script src="/path/to/jquery.min.js"></script>
+    <script src="/path/to/bootstrap.min.js"></script>
+    <script src="js/jquery.mycart.js"></script>
 
     <!--Glyphicons & Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -83,6 +88,10 @@
             <!-- Checkout -->
             <div class="col-lg-2 text-center nav-top" id="shopping-cart-icon">
                 <i class="fas fa-shopping-cart"></i>
+                <a href="#" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+                      </a>
+                    </p>
             </div>
 
         </div>
@@ -117,7 +126,6 @@
     <!-- Shopping Cart Activated Sidebar (Hidden until the Shopping Cart Icon is clicked -->
     <div class="container shopping-cart-class" id="shopping-cart">
         <div class="row">
-
             <!-- Empty Div For Close Menu Icon Placement -->
             <div class="col-lg-6">
             </div>
