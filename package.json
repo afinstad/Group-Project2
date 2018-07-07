@@ -8,9 +8,9 @@
     "npm": "3.5.2"
   },
   "scripts": {
-    "postinstall": "sequelize db:seed:undo:all && sequelize db:seed:all",
+    "postinstall": "sequelize db:migrate && sequelize db:seed:undo:all && sequelize db:seed:all",
     "start": "npm run production",
-    "production": "node app-server.js",
+    "production": "node server.js",
     "gulp": "gulp"
   },
   "repository": {
