@@ -8,7 +8,6 @@
     "npm": "3.5.2"
   },
   "scripts": {
-    "postinstall": "sequelize db:migrate && sequelize db:seed:undo:all && sequelize db:seed:all",
     "start": "npm run production",
     "production": "node server.js",
     "gulp": "gulp"
@@ -25,7 +24,6 @@
   },
   "homepage": "https://github.com/afinstad/Group-Project2#readme",
   "dependencies": {
-    "bcrypt": "^2.0.1",
     "bower": "^1.7.7",
     "buffer-to-vinyl": "^1.1.0",
     "dot-env": "0.0.1",
