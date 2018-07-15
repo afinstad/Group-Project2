@@ -30,7 +30,7 @@ $(document).ready(function () {
         var contentRows = $('#products-div');
         $.ajax({
             type: 'GET',
-            url: 'http://localhost:8080/api/products/category/' + categoryType,
+            url: 'https://dry-taiga-73094.herokuapp.com/api/products/category/' + categoryType,
             success: function (data, status) {
                 console.log(data);
                 $.each(data, function (index, item) {
