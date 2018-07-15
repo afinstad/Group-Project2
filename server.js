@@ -58,6 +58,6 @@ app.post ('/charge', function (req, res){
   // res.redirect('/payment.html');
   
 
-app.listen (3000, function (){
+app.listen (PORT, function (){
   console.log ("Stripe is running");
 });
